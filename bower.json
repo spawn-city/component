@@ -1,10 +1,10 @@
 {
-	"name": "app.ui.component",
-	"version": "0.3.0",
-	"description": "APP UI: Component",
+	"name": "spawn-city",
+	"version": "0.0.1",
+	"description": "Spawn City: Component",
 	"license": "MIT",
 	"keywords": [
-			"component", "app-ui", "ui", "web-components"
+			"spawn-city", "construct", "component", "web-components"
 	],
 	"main": "index.html",
 	"ignore": [
@@ -13,7 +13,11 @@
 		"node_modules"
 	],
 	"dependencies": {
-		"app" : "*",
+		"construct" : "*",
 		"webcomponentsjs": "*"
+	},
+	"devDependencies": {
+		"construct-atmosphere": "*",
+		"construct-user": "*"
 	}
 }
