@@ -8,6 +8,7 @@
 
 	});
 
-	APP.UI = APP.UI || {};
-	APP.UI.Component = View;
+	//APP.UI = APP.UI || {};
+	//APP.UI.Component = View;
+	window.SpawnCity = View;
 })( this.APP );

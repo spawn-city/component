@@ -10,12 +10,12 @@
 		// set options
 		var options = {
 			silentRender: true, // this is required to avoid an infinite loop (triggering createdCallback on .show() )
-			url: "../assets/html/app.ui.terminaltext.html"// use template html instead...
+			url: "../assets/html/template.html"// use template html instead...
 		};
 		// ...
 		options.el = this;
 		// instantiate view
-		this.view = new APP.UI.Component( options );
+		this.view = new SpawnCity( options );
 
 	};
 
@@ -30,7 +30,8 @@
 	// Fires when an attribute was added, removed, or updated
 	el.attributeChangedCallback = function(attr, oldVal, newVal) {};
 
-	document.registerElement('ui-component', {
-		prototype: el
+	document.registerElement('spawn-city', {
+		prototype: el,
+		extends: 'city'
 	});
 }());
